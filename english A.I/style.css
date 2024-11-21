@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+/* chap taraf konteyner */
+.userContainer{
+    flex: 2;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.text{
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 20%;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.yozuv{
+    display: inline;
+    height: auto;
+    font-size: 2rem;
+    overflow: auto;
+}
+.kursor{
+    display: inline;
+    width: 10px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: blueviolet;
+    color: blueviolet;
+    animation: go 1s infinite;
+}
+@keyframes go {
+    0%{display: inline;}
+    49%{display: inline;}
+    50%{display: none;}
+    100%{display: none;}
+}
+.send{
+    width: 30%;
+    height: 8%;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+/* o'ng  taraf konteyner */
+.container{
+    flex: 5;
+    height: 100vh;
+    overflow: scroll;
+    background-color: aqua;
+}
+.messages{
+    width: 90%;
+    height: auto;
+}
+.question{
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+}
+.answer{
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    background-color: chartreuse;
+    font-size: 1.5rem;
+}
